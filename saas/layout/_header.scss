@@ -41,3 +41,29 @@
         margin: 0;
     }
 }
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $grey-light;
+    padding: 1.5rem 0;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    &__icon {
+        color: $grey-dark;
+        font-size: 1.6rem;
+    }
+    
+    &__text {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $grey-dark;
+        margin: 0;
+    }
+}

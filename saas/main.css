@@ -97,4 +97,27 @@ img {
   font-weight: 500;
   color: #353535;
   margin: 0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  padding: 1.5rem 0;
+}
+.location__container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.location__icon {
+  color: #353535;
+  font-size: 1.6rem;
+}
+.location__text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #353535;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
