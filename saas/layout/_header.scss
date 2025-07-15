@@ -1,1 +1,43 @@
 // Header styles
+
+.header {
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1000;
+
+    &__logo {
+        font-family: $font-secondary;
+        font-size: 3rem;
+        font-weight: 400;
+        color: $black;
+        margin: 0;
+    }
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $grey-light;
+    padding: 1.5rem 0;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    &__icon {
+        color: $grey-dark;
+        font-size: 1.6rem;
+    }
+    
+    &__text {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $grey-dark;
+        margin: 0;
+    }
+}
