@@ -1,1 +1,26 @@
 // Button styles
+
+.btn {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border-radius: 2.5rem;
+    border: none;
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    
+    &--primary {
+        background: linear-gradient(135deg, $secondary-color, $primary-color);
+        color: $white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        
+        &:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+        }
+    }
+}
