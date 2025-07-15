@@ -61,6 +61,121 @@ img {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+}
+.restaurants__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+@media (max-width: 767px) {
+  .restaurants__title {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+  }
+}
+.restaurants__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .restaurants__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+.restaurant-card {
+  background-color: #FFFFFF;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+.restaurant-card__badge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  z-index: 10;
+}
+.restaurant-card__image {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.restaurant-card__content {
+  padding: 1.5rem 2rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurant-card__text {
+  flex: 1;
+}
+.restaurant-card__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 0.5rem 0;
+}
+.restaurant-card__location {
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #000000;
+  margin: 0;
+}
+.restaurant-card__heart {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 2rem;
+  position: relative;
+}
+.restaurant-card__heart .far, .restaurant-card__heart .fas {
+  font-size: 2.5rem;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+.restaurant-card__heart .fas {
+  color: transparent;
+  background: linear-gradient(135deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(0);
+}
+.restaurant-card__heart:hover .far {
+  opacity: 0;
+  transform: scale(0);
+}
+.restaurant-card__heart:hover .fas {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .functioning {
   padding: 5rem 0;
   background-color: #FFFFFF;
