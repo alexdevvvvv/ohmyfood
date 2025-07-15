@@ -1,5 +1,4 @@
-// D'ABORD les variables et mixins
-@import 'utils/animations';
+// D'ABORD les variables (obligatoire en premier !)
 @import 'utils/variables';
 @import 'utils/mixins';
 
@@ -8,10 +7,15 @@
 @import 'base/base';
 
 // PUIS les layouts et components
-@import 'layout/restaurants';
-@import 'layout/functioning';
 @import 'layout/header';
 @import 'layout/hero';
+@import 'layout/functioning';
+@import 'layout/restaurants';
 @import 'layout/footer';
+
+// Components
 @import 'components/buttons';
 @import 'components/cards';
+
+// Animations en dernier
+@import 'utils/animations';

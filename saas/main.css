@@ -61,6 +61,176 @@ img {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
+.header {
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1000;
+}
+.header__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  padding: 1.5rem 0;
+}
+.location__container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.location__icon {
+  color: #353535;
+  font-size: 1.6rem;
+}
+.location__text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #353535;
+  margin: 0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  padding: 1.5rem 0;
+}
+.location__container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.location__icon {
+  color: #353535;
+  font-size: 1.6rem;
+}
+.location__text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #353535;
+  margin: 0;
+}
+
+.hero {
+  background-color: #f6f6f6;
+  padding: 4rem 0;
+  text-align: center;
+}
+.hero__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  max-width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.2;
+}
+.hero__subtitle {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #353535;
+  margin-bottom: 3rem;
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.3;
+}
+
+.functioning {
+  padding: 5rem 0;
+  background-color: #FFFFFF;
+}
+.functioning__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+@media (max-width: 767px) {
+  .functioning__title {
+    margin-bottom: 2.5rem;
+    padding-left: 2rem;
+  }
+}
+.functioning__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media (min-width: 1024px) {
+  .functioning__steps {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 2rem;
+  padding: 2.5rem 2rem;
+  position: relative;
+  margin-left: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+@media (min-width: 1024px) {
+  .step {
+    flex: 1;
+    margin-left: 1rem;
+  }
+}
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  background-color: #f2eafb;
+}
+.step:hover .step__icon {
+  color: #9356DC;
+}
+.step__number {
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #9356DC;
+  color: #FFFFFF;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.step__icon {
+  color: #7e7e7e;
+  font-size: 2rem;
+  margin-right: 2.5rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+.step__text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+}
+
 .restaurants {
   background-color: #f6f6f6;
   padding: 5rem 0;
@@ -176,174 +346,42 @@ img {
   transform: scale(1);
 }
 
-.functioning {
-  padding: 5rem 0;
-  background-color: #FFFFFF;
+.footer {
+  background-color: #353535;
+  color: #FFFFFF;
+  padding: 3rem 0;
 }
-.functioning__title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #000000;
-  margin-bottom: 3rem;
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
 }
-@media (max-width: 767px) {
-  .functioning__title {
-    margin-bottom: 2.5rem;
-    padding-left: 2rem;
-  }
-}
-.functioning__steps {
+.footer__links {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-@media (min-width: 1024px) {
-  .functioning__steps {
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
-
-.step {
-  display: flex;
-  align-items: center;
-  background-color: #f6f6f6;
-  border-radius: 2rem;
-  padding: 2.5rem 2rem;
-  position: relative;
-  margin-left: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-@media (min-width: 1024px) {
-  .step {
-    flex: 1;
-    margin-left: 1rem;
-  }
-}
-.step:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-  background-color: #f2eafb;
-}
-.step:hover .step__icon {
-  color: #9356DC;
-}
-.step__number {
-  position: absolute;
-  left: -1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #9356DC;
+.footer__link {
   color: #FFFFFF;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-.step__icon {
-  color: #7e7e7e;
-  font-size: 2rem;
-  margin-right: 2.5rem;
-  margin-left: 1rem;
   transition: color 0.3s ease;
 }
-.step__text {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #000000;
-  margin: 0;
+.footer__link i {
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  width: 1.5rem;
 }
-
-.header {
-  padding: 1.5rem 0;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  position: relative;
-  z-index: 1000;
-}
-.header__logo {
-  font-family: "Shrikhand", cursive;
-  font-size: 3rem;
-  font-weight: 400;
-  color: #000000;
-  margin: 0;
-}
-
-.location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #EAEAEA;
-  padding: 1.5rem 0;
-}
-.location__container {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.location__icon {
-  color: #353535;
-  font-size: 1.6rem;
-}
-.location__text {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #353535;
-  margin: 0;
-}
-
-.location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #EAEAEA;
-  padding: 1.5rem 0;
-}
-.location__container {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.location__icon {
-  color: #353535;
-  font-size: 1.6rem;
-}
-.location__text {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #353535;
-  margin: 0;
-}
-
-.hero {
-  background-color: #f6f6f6;
-  padding: 4rem 0;
-  text-align: center;
-}
-.hero__title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #000000;
-  margin-bottom: 1.5rem;
-  max-width: 275px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.2;
-}
-.hero__subtitle {
-  font-size: 1.8rem;
-  font-weight: 300;
-  color: #353535;
-  margin-bottom: 3rem;
-  max-width: 315px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.3;
+.footer__link:hover {
+  color: #9356DC;
 }
 
 .btn {
@@ -367,4 +405,44 @@ img {
   opacity: 0.9;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.restaurant-card__heart {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 2rem;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.restaurant-card__heart .far {
+  font-size: 2.5rem;
+  color: #000000;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.restaurant-card__heart .fas {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.restaurant-card__heart:hover .far {
+  opacity: 0;
+  transform: scale(0);
+}
+.restaurant-card__heart:hover .fas {
+  opacity: 1;
+  transform: scale(1);
 }/*# sourceMappingURL=main.css.map */
