@@ -1,0 +1,13 @@
+// D'ABORD les variables et mixins
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// ENSUITE les fichiers de base
+@import 'base/normalize';
+@import 'base/base';
+
+// PUIS les layouts et components
+@import 'layout/header';
+@import 'layout/footer';
+@import 'components/buttons';
+@import 'components/cards';
