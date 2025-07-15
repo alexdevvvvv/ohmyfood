@@ -1,0 +1,86 @@
+.functioning {
+    padding: 5rem 0;
+    background-color: $white;
+    
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $black;
+        margin-bottom: 3rem;
+        
+        @include mobile {
+            margin-bottom: 2.5rem;
+            padding-left: 2rem;
+        }
+    }
+    
+    &__steps {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            gap: 2rem;
+        }
+    }
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 2rem;
+    padding: 2.5rem 2rem;
+    position: relative;
+    margin-left: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    
+    @media (min-width: 1024px) {
+        flex: 1;
+        margin-left: 1rem;
+    }
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+        background-color: lighten($primary-color, 35%);
+        
+        .step__icon {
+            color: $primary-color;
+        }
+    }
+    
+    &__number {
+        position: absolute;
+        left: -1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $primary-color;
+        color: $white;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    
+    &__icon {
+        color: #7e7e7e;
+        font-size: 2rem;
+        margin-right: 2.5rem;
+        margin-left: 1rem;
+        transition: color 0.3s ease;
+    }
+    
+    &__text {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $black;
+        margin: 0;
+    }
+}
